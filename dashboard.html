@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fc;
+    }
+
+    .dashboard-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+    }
+
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 4px solid #3b82f6;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      margin-top: 20px;
+    }
+
+    .profile-info h2 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .profile-info p {
+      color: #555;
+      font-size: 16px;
+      margin-top: 8px;
+    }
+
+    .profile-stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .stat {
+      width: 30%;
+    }
+
+    .stat h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .stat p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 10px 25px;
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="https://via.placeholder.com/120" alt="Profile Picture">
+      </div>
+      <div class="profile-info">
+        <h2>John Doe</h2>
+        <p>Digital Marketer | Mentor</p>
+      </div>
+      <div class="profile-stats">
+        <div class="stat">
+          <h3>1.2K</h3>
+          <p>Followers</p>
+        </div>
+        <div class="stat">
+          <h3>540</h3>
+          <p>Following</p>
+        </div>
+        <div class="stat">
+          <h3>30</h3>
+          <p>Projects</p>
+        </div>
+      </div>
+      <button class="btn">Edit Profile</button>
+    </div>
+  </div>
+</body>
+</html>
